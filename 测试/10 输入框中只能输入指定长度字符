@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>输入框中只能输入指定长度字符</title>
+</head>
+<body>
+	<p>最多输入5个字符，还剩：<span id="rest"></span></p>
+	<input id="txt" type="text" value="" maxlength="5">
+<!-- 	<script>
+	var oTxt = document.getElementById("txt");
+	var oRes = document.getElementById("rest");
+	oTxt.onkeydown = function () {
+		if (this.value.length <= 5) {
+			oRes.innerText = 5 - this.value.length;
+		} else {
+			this.value = this.value.slice(0, 5);
+		}
+	}
+
+
+</script>
+ -->
+</body>
+</html>

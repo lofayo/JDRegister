@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置word-spacing</title>
+</head>
+<body>
+	<p id="test" style="font-size: 12px; background-color: #ccc; width: 150px;">汉字字间距</p>
+	<script>
+		var oTxt = document.getElementById("test");
+		var wordSpace = (parseInt(oTxt.style.width) - parseInt(oTxt.style.fontSize) * oTxt.innerText.length)/(oTxt.innerText.length - 1);
+		oTxt.style.letterSpacing = wordSpace + "px";
+	</script>
+</body>
+</html>

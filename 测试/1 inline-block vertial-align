@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>inline-block vertical-align</title>
+	<style>
+	/*
+		img是inline-block，默认是底部基线对齐
+		其它inline-block元素，默认顶部对齐
+	 */
+		div{
+			border: 1px solid black;
+			margin-bottom: 20px;
+			font-size: 12px;
+		}
+		span{
+			display: inline-block;
+			height: 100px;
+			background-color: yellow;
+			vertical-align: middle;
+		}
+		input {
+			height: 20px;
+			width: 20px;
+			margin: 0;
+			vertical-align: middle;
+		}
+		.test {
+			height: 50px;
+			line-height: 50px;
+		}
+		.test i{
+			display: inline-block;
+			height: 20px;
+			line-height: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<span>inline-block</span>行内元素所在行文本
+		<img src="C:\Users\Administrator\Desktop\资料\4.jpg" alt="">
+	</div>
+	<div class="test">
+		<input type="checkbox" checked="checked" />
+		<i>行内元素所在行文本</i>
+	</div>
+</body>
+</html>

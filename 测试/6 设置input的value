@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置input的value</title>
+</head>
+<body>
+	<input id="txt" type="text" value="请输入内容" />
+	<script>
+		//这个是怎么做到的？明明设置了value值，可是DOM结构里去不改变，但效果变了
+		var oTxt = document.getElementById("txt");
+		oTxt.onclick = function(){
+			alert(this.value);
+			this.value = "input";
+		}
+	</script>
+</body>
+</html>

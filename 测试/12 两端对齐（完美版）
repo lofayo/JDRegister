@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两端对齐（完美版）</title>
+	<style>
+		div{
+			border: 1px solid black;
+			width: 400px;
+			height: 300px;
+		}
+		/*原理解释：
+					text-align：justify;适用于除最后一行的其它行两端对齐
+					所以，将其作用于单纯的一行（这一行也是最后一行）是没有效果的
+					所以，加个inline-block伪对象模拟最后一行，才能产生效果
+
+					每行后面加一伪行
+					p:after{
+						content:"";		内容为空
+						display:inline-block;		内联块，按道理会和文本一行显示
+						width: 100$;		但是，后续设置了宽度为父框的100%，所以生成下一行
+					}
+
+		*/
+		p{
+			text-align: justify;
+		}
+		p:after{
+			content: "";
+			display: inline-block;	
+			width: 90%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>文本两端对齐的实现过程。</p>
+		<p>文本两端对齐的实现过程。</p>
+	</div>
+</body>
+</html>

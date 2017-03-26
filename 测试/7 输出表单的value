@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>输出表单的value</title>
+</head>
+<body>
+	<input id="txt" type="text" value="表单的value" />
+	<button id="btn">获取value</button>
+	<script>
+		var oTxt = document.getElementById("txt");
+		var oBtn = document.getElementById("btn");
+		oTxt.onfocus = function() {
+			console.log(this.value);
+		}
+
+	</script>
+</body>
+</html>

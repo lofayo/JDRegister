@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div里图片的垂直居中</title>
+	<style>
+		.box{
+			width: 200px;
+			height: 54px;
+			line-height: 54px;
+			
+			border: 1px solid black;
+		}
+		.box img {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		hello<img src="../images/verifyCode.jpg" alt="" >
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta strset="UTF-8">
+	<title>name</title>
+</head>
+<body>
+	<script>
+		var str = "abcdefghijklmnopqrstuvwxyz";
+		for(var i=0; i<str.length; i++) {
+			for(var j=0; j<str.length; j++) {
+				if (j != i) {
+					document.write(str[i]+str[j]+str[i]+str[j]+" ");
+				}
+			}
+			document.write("<br/>");
+			document.write("<br/>");
+		}
+	</script>
+</body>
+</html>
